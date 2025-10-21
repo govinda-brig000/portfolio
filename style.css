@@ -1,0 +1,315 @@
+/* Reset e impostazioni generali */
+            * {
+                 margin: 2;
+                padding: 1;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Aptos', sans-serif;
+                background-color: #000000;
+                color: #ffffff;
+            }
+
+/* Header superiore con contatti */
+            .top-bar {
+                        background-color: #3d4d6d;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 22px 0 rgba(60,60,70,0,23), 
+                        0 1px 3px 0 rgba(140,200,230,0.10);
+                        
+                        padding: 30px;
+                    
+                    color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 50px;
+                    font-size: 14px;
+                    }
+
+
+            
+            .contact-info tt {
+                            font-family: 'Courier New', monospace;
+                            font-size: 14px;
+                            }
+
+            .social-icons {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    }
+
+            .social-icons a {
+                    display: inline-block;
+                    transition: opacity 0.3s;
+                    }
+
+            .social-icons a:hover {
+                    opacity: 0.7;
+                    }
+
+            .social-icons img {
+                        vertical-align: middle;                    
+                        }
+
+
+    /* Sezione profilo */
+                        .profile-section {
+                                            
+                            margin-top: 50px;
+                            background-color: #86cbb0;
+                                            padding: 80px 50px;
+                                            min-height: calc(100vh - 150px);
+                                            border-radius: 30px;
+                                            box-shadow: 0 12px 36px 4px rgba(60,60,70,0.24),
+                                            0 4px 24px 8px rgba(60,60,70,0.11), 
+                                            0 1px 2px rgba(255,255,255,0.11),
+                                inset 0 2px 24px rgba(0,0,0,0.05);        
+                         
+                                        }
+                    
+
+
+                        .profile-container {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                display: grid;
+                                grid-template-columns: 350px 1fr;
+                                gap: 80px;
+                                align-items: start;
+                                }
+
+    /* Colonna sinistra: Foto profilo */
+    .profile-left {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 20px;
+                                    }
+
+                        .profile-image {
+                                        width: 200px;
+                                        height: 200px;
+                                        border-radius: 50%;
+                                        overflow: hidden;
+                                        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* ombra più evidente */
+                                        border: 5px solid #86cbb0; /* bordo verde chiaro */
+                                        }
+
+
+                        .profile-image img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        }
+
+                        .linkedin-link {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 8px;
+                                    text-decoration: none;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    transition: opacity 0.3s;
+                                    }
+
+                        .linkedin-link span {
+                                    color: white;
+                                    font-weight: bold;
+                                    }
+
+                                    .profile-left {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 20px;
+                                    }
+
+                        .profile-image {
+                                        width: 200px;
+                                        height: 200px;
+                                        border-radius: 50%;
+                                        overflow: hidden;
+                                        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* ombra più evidente */
+                                        border: 5px solid #86cbb0; /* bordo verde chiaro */
+                                        }
+
+
+                        .profile-image img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        }
+
+                        .linkedin-link {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 8px;
+                                    text-decoration: none;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    transition: opacity 0.3s;
+                                    }
+
+                        .linkedin-link span {
+                                    color: white;
+                                    font-weight: bold;
+                                    }
+                                
+                        
+
+        
+        
+            /* Colonna destra: Informazioni */
+
+                        .profile-right {
+                                padding-top: 20px;
+                                    }
+
+                        @font-face {
+                        font-family: 'Light';
+                        src: url('light.woff') format('truetype');
+                        font-weight: normal;
+                        font-style: normal;
+                        }
+
+                        .profile-name {
+                                font-family: 'Light', sans-serif;
+                                font-size: 48px;
+                                color: #000000;
+                                letter-spacing:0,7px;
+                                }
+
+                        .profile-title {
+                                font-size: 18px;
+                                font-style: italic;
+                                color: #333;
+                                margin-bottom: 40px;
+                                }
+
+                        .section-title {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #1a2e2e;
+                        margin-top: 30px;
+                        margin-bottom: 15px;
+                        letter-spacing: 1px;
+                        }
+
+            /* Stili per la classe aboutme */
+                        .aboutme {
+                                font-size: 15px;
+                                line-height: 1.8;
+                                colo:rgb(0, 0, 0);
+                                margin-bottom: 15px;
+                                text-align: justify;
+                                }
+
+                        .aboutme1 {
+                                font-size: 15px;
+                                line-height: 1.8;
+                                colo:rgb(0, 0, 0);
+                                margin-bottom: 15px;
+                                text-align: justify;
+                                }
+
+
+            /* Stili per la classe skills */
+                        .skills {
+                                list-style-position: inside;
+                                font-size: 15px;
+                                line-height: 1.8;
+                                color: black;
+                                }
+
+                        .skills li {
+                                margin-bottom: 8px;
+                                }
+
+            /* Responsive design */
+    @media (max-width: 1024px) {
+                        .profile-container {
+                                grid-template-columns: 1fr;
+                                gap: 40px;
+                                text-align: center;
+                                }
+
+                        .profile-left {
+                                        margin: 0 auto;
+                                        }
+
+                        .profile-right {
+                                padding-top: 0;
+                                }
+
+                        .aboutme {
+                                text-align: left;
+                                }
+            }
+
+    @media (max-width: 768px) {
+                        .top-bar {
+                                flex-direction: column;
+                                gap: 10px;
+                                padding: 15px 20px;
+                                text-align: center;
+                            }
+
+                        .profile-section {
+                                padding: 40px 20px;
+                            }
+
+                        .profile-name {
+                                font-size: 36px;
+                            }
+
+                        .profile-image {
+                                    width: 180px;
+                                    height: 180px;
+                        }
+            }
+
+      /* Stile bottone scroll */
+.icon-buttons {
+  position: fixed;      /* Fissa la posizione rispetto alla finestra */
+  bottom: 20px;         /* A 20px dal basso */
+  right: 50px;          /* A 20px da destra */
+  display: flex;        /* Affianca i bottoni */
+  gap: 15px;            /* Spaziatura tra i bottoni */
+  z-index: 1000;        /* Sopra altri contenuti */
+}
+
+.icon-btn {
+  background-color: black;
+  border-radius: 25px;
+  color: #86cbb0;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon-btn:hover {
+  background-color: #86cbb0;
+  color: black;
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 30px;
+  background-color: #edf7f1;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+
+
+
