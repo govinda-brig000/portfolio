@@ -12,22 +12,13 @@
     <div class="splash" id="splash">
         <div class="face-id">
             <svg viewBox="0 0 64 64">
-                <!-- Angoli del frame -->
                 <path class="corner" d="M4 16 V8 Q4 4 8 4 H16" />
                 <path class="corner" d="M48 4 H56 Q60 4 60 8 V16" />
                 <path class="corner" d="M60 48 V56 Q60 60 56 60 H48" />
                 <path class="corner" d="M16 60 H8 Q4 60 4 56 V48" />
-                
-                <!-- Occhio sinistro -->
                 <path class="eye-left" d="M22 24 V30" />
-                
-                <!-- Occhio destro -->
                 <path class="eye-right" d="M42 24 V30" />
-                
-                <!-- Naso -->
                 <path class="nose" d="M32 28 V38 L28 42" />
-                
-                <!-- Bocca -->
                 <path class="mouth" d="M24 48 Q32 54 40 48" />
             </svg>
         </div>
@@ -39,7 +30,7 @@
     <!-- Sezione profilo centrata -->
     <section class="profile-section">
         <div class="profile-content">
-            
+
             <!-- Foto profilo centrata -->
             <div class="profile-image">
                 <img src="IMG_2025-10-14-011803.PNG" alt="Govinda Brigante">
@@ -60,72 +51,54 @@
 
             <!-- About Me -->
             <h2 class="section-title">ABOUT ME</h2>
-            
+
             <p class="aboutme" style="color:black">
-                    Sono un neolaureato in <span style="font-weight:bold">CMP</span> presso <span style="font-weight:bold"></span> <em>La Libera
-                    Università di Lingue e Comunicazione</em></span>
-                    <span style="font-weight:bold">IULM</span>. <br>
-                    Mi entusiasma il mondo della comunicazione e dei mass media. Sono una persona solare e positiva, 
-                    mi piace apprendere per una crescita continua e durante il mio percorso
-                    accademico ho avuto modo di sviluppare diversi progetti che mi hanno permesso di approfondire 
-                    strategie pubblicitarie, digital marketing, analisi dei media e branding.
-                </p>
+                Sono un neolaureato in <span style="font-weight:bold">CMP</span> presso
+                <em>La Libera Università di Lingue e Comunicazione</em>
+                <span style="font-weight:bold">IULM</span>.<br>
+                Mi entusiasma il mondo della comunicazione e dei mass media. Sono una persona solare e positiva,
+                mi piace apprendere per una crescita continua e durante il mio percorso
+                accademico ho avuto modo di sviluppare diversi progetti che mi hanno permesso di approfondire
+                strategie pubblicitarie, digital marketing, analisi dei media e branding.
+            </p>
 
-            
+            <h2 class="section-title">KEY SKILLS</h2>
 
-                <h2 class="section-title">KEY SKILLS</h2>
-                
-                <p class="aboutme" style="color:black">
-                    Analisi dei media | Strategie di comunicazione | Excel | Photoshop | Da Vinci | Digital Marketing | HTML/Css
-                    
+            <p class="aboutme skills-text" style="color:black">
+                Analisi dei media | Strategie di comunicazione | Excel | Photoshop | Da Vinci | Digital Marketing | HTML/Css
+            </p>
 
-
-                </p>
-
-
-            </div>
-        </div>
-
-            
-           <!-- Portfolio e Tesi Cards -->
+            <!-- Portfolio e Tesi Cards -->
             <div class="portfolio-section">
+
                 <!-- Portfolio Card -->
-                <div class="portfolio-card-wrapper portfolio-large">
-                    <div class="portfolio-card" onclick="window.open('BRIEF4.pdf', '_blank')">
-                        <div class="card-content">
-                            <h3>Portfolio</h3>
-                            <div class="card-actions">
-                                <a href="BRIEF4.pdf" target="_blank" onclick="event.stopPropagation()" title="Visualizza">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+<div class="portfolio-card-wrapper portfolio-large">
+    <div class="portfolio-card" onclick="window.open('BRIEF4.pdf', '_blank')">
+        <div class="card-content">
+            <h3>Portfolio</h3>
+            <p class="card-subtitle-small">Progetti Personali</p>
+        </div>
+    </div>
+</div>
+
+
+               <!-- Tesi Card -->
+<div class="portfolio-card-wrapper portfolio-small">
+    <div class="portfolio-card" onclick="window.open('tesi.pdf', '_blank')">
+        <div class="card-content">
+            <h3>Sistema di<br>Credito Sociale<br>in Cina</h3>
+            <p class="card-subtitle-small">Tesi Universitaria</p>
+        </div>
+    </div>
+</div>
+
                 </div>
 
-                <!-- Tesi Card -->
-                <div class="portfolio-card-wrapper portfolio-small">
-                    <div class="portfolio-card" onclick="window.open('tesi.pdf', '_blank')">
-                        <div class="card-content">
-                            <h3>Sistema di<br>Credito Sociale<br>in Cina</h3>
-                            <p class="card-subtitle-small">Tesi Universitaria</p>
-                            <div class="card-actions">
-                                <a href="tesi.pdf" target="_blank" onclick="event.stopPropagation()" title="Visualizza">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <!-- fine portfolio-section -->
 
         </div>
+        <!-- fine profile-content -->
     </section>
 
     <script src="script.js"></script>
