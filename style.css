@@ -18,7 +18,6 @@ body {
    FACE ID SPLASH SCREEN STYLES
    ============================================ */
 
-/* Splash screen container */
 .splash {
     position: fixed;
     inset: 0;
@@ -28,7 +27,7 @@ body {
     background: #000000;
     z-index: 1000;
     transition: opacity 0.4s ease-out;
-    padding-top: 0px;
+    padding-top: 80px;
 }
 
 .splash.fade-out {
@@ -36,7 +35,6 @@ body {
     pointer-events: none;
 }
 
-/* Face ID icon */
 .face-id {
     width: 100px;
     height: 100px;
@@ -48,7 +46,6 @@ body {
     height: 130%;
 }
 
-/* Animazione tracciamento SVG */
 .face-id path {
     stroke: #fff;
     stroke-width: 3;
@@ -60,7 +57,6 @@ body {
     animation: draw 1.6s ease-out forwards;
 }
 
-/* Stagger per ogni elemento */
 .face-id .corner { animation-delay: 0s; }
 .face-id .eye-left { animation-delay: 0.3s; }
 .face-id .eye-right { animation-delay: 0.35s; }
@@ -71,7 +67,6 @@ body {
     to { stroke-dashoffset: 0; }
 }
 
-/* Pulse finale */
 .face-id {
     animation: pulse 0.3s ease-out 1.5s;
 }
@@ -81,7 +76,6 @@ body {
     50% { transform: scale(1.05); }
 }
 
-
 /* ============================================
    HOMEPAGE STYLES - CENTERED LAYOUT
    ============================================ */
@@ -89,14 +83,18 @@ body {
 .profile-section {
     margin-top: 0;
     background-color: #86cbb0;
-    padding: 60px 50px 80px 50px;
-    min-height: calc(100vh - 5px);
+    padding: 40px 50px 60px 50px;
+    min-height: 100vh;
     border-radius: 15px;
     box-shadow: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .profile-content {
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -111,7 +109,8 @@ body {
     overflow: hidden;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
     border: 5px solid #86cbb0;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    flex-shrink: 0;
 }
 
 .profile-image img {
@@ -125,11 +124,14 @@ body {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin: 0 auto 24px auto;
+    width: 100%;
 }
 
 .social-icons-centered a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: opacity 0.3s;
     text-decoration: none;
 }
@@ -139,7 +141,7 @@ body {
 }
 
 .social-icons-centered img {
-    vertical-align: middle;
+    display: block;
 }
 
 .profile-name {
@@ -150,15 +152,19 @@ body {
     margin-bottom: 50px;
     margin-top: 0;
     font-weight: 700;
+    width: 100%;
+    text-align: center;
 }
 
 .section-title {
     font-size: 16px;
     font-weight: 700;
     color: #1a2e2e;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 16px;
     letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
 }
 
 .aboutme {
@@ -167,6 +173,7 @@ body {
     color: rgb(0, 0, 0);
     margin-bottom: 15px;
     text-align: center;
+    width: 100%;
 }
 
 .aboutme1 {
@@ -177,16 +184,8 @@ body {
     text-align: center;
 }
 
-.skills {
-    list-style: none;
-    font-size: 15px;
-    line-height: 1.8;
-    color: black;
-    margin-bottom: 150px;
-}
-
-.skills li {
-    margin-bottom: 8px;
+.skills-text {
+    margin-bottom: 50px;
 }
 
 /* ============================================
@@ -198,27 +197,27 @@ body {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
     flex-wrap: nowrap;
 }
 
-/* Portfolio Card - Outer glass border */
 .portfolio-card-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 220px;
+    height: 180px;
 }
 
+/* Proporzione più equilibrata: 1.2 vs 1 */
 .portfolio-card-wrapper.portfolio-large {
-    flex: 1.4;
-    min-width: 240px;
+    flex: 1.2;
+    min-width: 0;
 }
 
 .portfolio-card-wrapper.portfolio-small {
     flex: 1;
-    min-width: 170px;
+    min-width: 0;
 }
 
 .portfolio-card-wrapper::before {
@@ -232,11 +231,10 @@ body {
     pointer-events: none;
 }
 
-/* Portfolio Card - Inner black background */
 .portfolio-card {
     background-color: #2a2a2a;
     border-radius: 20px;
-    padding: 40px 30px;
+    padding: 24px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -249,77 +247,33 @@ body {
     z-index: 1;
 }
 
+
 .portfolio-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Card content */
-.card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    height: 100%;
-}
 
 .card-content h3 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     margin: 0;
     letter-spacing: 0.5px;
     line-height: 1.2;
+    text-align: center;
+    width: 100%;
 }
 
 .card-subtitle-small {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     color: #b0b0b0;
-    margin: 0;
-    margin-top: 0;
+    margin: 4px 0 0 0;
+    text-align: center;
+    width: 100%;
 }
 
-/* Card actions - eye icon */
-.card-actions {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 12px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.portfolio-card:hover .card-actions {
-    opacity: 1;
-}
-
-.card-actions a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.card-actions a:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    transform: scale(1.1);
-}
-
-.card-actions svg {
-    width: 20px;
-    height: 20px;
-    stroke: #ffffff;
-}
 
 /* ============================================
    WAVING HAND EMOJI
@@ -362,121 +316,112 @@ body {
 
 @media (max-width: 1024px) {
     .profile-section {
-        padding: 50px 30px 80px 30px;
+        padding: 40px 30px 60px 30px;
     }
-
     .profile-content {
         max-width: 100%;
     }
-
     .portfolio-section {
-        gap: 20px;
-    }
-
-    .portfolio-card-wrapper.portfolio-large {
-        min-width: 250px;
-    }
-
-    .portfolio-card-wrapper.portfolio-small {
-        min-width: 180px;
+        gap: 16px;
     }
 }
 
 @media (max-width: 768px) {
     .profile-section {
-        padding: 40px 20px 80px 20px;
-        min-height: calc(100vh - 20px);
+        padding: 30px 20px 60px 20px;
+        min-height: 100vh;
+        border-radius: 0;
     }
-
     .profile-name {
         font-size: 36px;
         margin-bottom: 40px;
     }
-
     .profile-image {
-        width: 180px;
-        height: 180px;
-        margin-bottom: 25px;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
     }
-
     .social-icons-centered {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
-
     .section-title {
-        margin-top: 30px;
-        margin-bottom: 15px;
+        margin-top: 25px;
+        margin-bottom: 12px;
     }
-
-    .skills {
-        margin-bottom: 60px;
+    .skills-text {
+        margin-bottom: 36px;
     }
-
     .portfolio-section {
-        flex-wrap: wrap;
-        gap: 15px;
+        gap: 14px;
+        flex-wrap: nowrap;
     }
-
     .portfolio-card-wrapper {
-        height: 240px;
+        height: 160px;
     }
-
     .portfolio-card-wrapper.portfolio-large {
-        flex: 1;
-        min-width: 100%;
+        flex: 1.2;
     }
-
     .portfolio-card-wrapper.portfolio-small {
         flex: 1;
-        min-width: 100%;
     }
-
     .card-content h3 {
-        font-size: 24px;
+        font-size: 17px;
     }
-
     .card-subtitle-small {
-        font-size: 12px;
+        font-size: 10px;
     }
-
     .waving-hand {
-        font-size: 40px;
-        top: 30px;
-        left: 30px;
+        font-size: 38px;
+        top: 20px;
+        right: 20px;
+        left: auto;
     }
 }
 
 @media (max-width: 480px) {
     .profile-section {
-        padding: 30px 15px 60px 15px;
+        padding: 28px 16px 50px 16px;
     }
-
     .profile-name {
-        font-size: 28px;
-        margin-bottom: 30px;
+        font-size: 26px;
+        margin-bottom: 28px;
     }
-
     .profile-image {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
-
     .aboutme,
     .aboutme1 {
         font-size: 14px;
     }
-
+    .portfolio-section {
+        gap: 12px;
+    }
     .portfolio-card-wrapper {
-        height: 200px;
+        height: 150px;
     }
-
+    .portfolio-card {
+        padding: 16px 12px;
+    }
     .card-content h3 {
-        font-size: 20px;
+        font-size: 15px;
     }
-
+    .skills-text {
+        margin-bottom: 30px;
+    }
     .waving-hand {
-        font-size: 35px;
-        top: 20px;
-        left: 20px;
+        font-size: 32px;
+        top: 16px;
+        right: 16px;
+    }
+}
+
+/* ============================================
+   IPHONE SAFE AREA SUPPORT
+   ============================================ */
+
+@supports (padding: max(0px)) {
+    .profile-section {
+        padding-bottom: max(60px, env(safe-area-inset-bottom) + 40px);
     }
 }
