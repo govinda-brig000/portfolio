@@ -1,181 +1,134 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<body style="background-color: #ab6262"></body>
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet"  
-          href="style.css">  <!-- Indica che il file collegato è un file di stile e 
-                                   specifica il percorso del file CSS -->
-    
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govinda Brigante - Homepage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style> 
-
-
-
-
-
-
-
-</style>
-
-
 <body>
 
-    <!-- Header con contatti -->
-    <header class="top-bar">
-        
-        <div class="contact-info">
-            govinda.brigante@gmail.com
+    <!-- Splash Screen Face ID -->
+    <div class="splash" id="splash">
+        <div class="face-id">
+            <svg viewBox="0 0 64 64">
+                <!-- Angoli del frame -->
+                <path class="corner" d="M4 16 V8 Q4 4 8 4 H16" />
+                <path class="corner" d="M48 4 H56 Q60 4 60 8 V16" />
+                <path class="corner" d="M60 48 V56 Q60 60 56 60 H48" />
+                <path class="corner" d="M16 60 H8 Q4 60 4 56 V48" />
+                
+                <!-- Occhio sinistro -->
+                <path class="eye-left" d="M22 24 V30" />
+                
+                <!-- Occhio destro -->
+                <path class="eye-right" d="M42 24 V30" />
+                
+                <!-- Naso -->
+                <path class="nose" d="M32 28 V38 L28 42" />
+                
+                <!-- Bocca -->
+                <path class="mouth" d="M24 48 Q32 54 40 48" />
+            </svg>
         </div>
+    </div>
 
-        <div class="social-icons">
-            <a href="mailto:govinda.brigante@gmail.com"><img src="IMG_7158 2.PNG" width="20px" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/govinda-b-87638910a/"><img src="IMG_7159 2.PNG" width="20px" alt="LinkedIn"></a>
-        </div>
-    </header>
+    <!-- Waving hand emoji -->
+    <div class="waving-hand" id="waving-hand">👋🏼</div>
 
-    <!-- Barra di navigazione principale -->
-    <nav class="main-nav">
-
-        <ul  class="language-selector">
-                <img src="IMG_7160.PNG" width="10px" alt="IT"> IT
-        
-        </ul>
-    </nav>
-
-    <!-- Sezione profilo con layout a 2 colonne -->
+    <!-- Sezione profilo centrata -->
     <section class="profile-section">
-        <div class="profile-container">
+        <div class="profile-content">
+            
+            <!-- Foto profilo centrata -->
+            <div class="profile-image">
+                <img src="IMG_2025-10-14-011803.PNG" alt="Govinda Brigante">
+            </div>
 
-            <!-- Colonna sinistra: Foto profilo -->
-
-            <div class="profile-left">
-                <div class="profile-image">
-                    <img src= IMG_2025-10-14-011803.PNG
-                    width="200px" 
-                    alt= "IMG_2025-10-14-011803.PNG"> 
-                </div>
-                <a href="#" class="https://www.linkedin.com/in/govinda-b-87638910a/">
-                    <img src="IMG_7159 2.PNG" 
-                    width="20px"
-                    alt="LinkedIn"><span> LinkedIn</span>
+            <!-- Icone social centrate sotto la foto -->
+            <div class="social-icons-centered">
+                <a href="mailto:govinda.brigante@gmail.com" title="Email" target="_blank" rel="noopener noreferrer">
+                    <img src="IMG_7158 2.PNG" width="20" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/govinda-b-87638910a/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img src="IMG_7159 2.PNG" width="20" alt="LinkedIn">
                 </a>
             </div>
 
+            <!-- Nome centrato -->
+            <h1 class="profile-name">Govinda Brigante</h1>
 
-                
-
-
-
-
-
-
-            <!-- Colonna destra: Informazioni -->
-            <div class="profile-right">
-                <h1 class="profile-name">Govinda Brigante
-                    
-                </h1>
-
-
-                <h2 class="section-title">ABOUT ME</h2>
-                
-                <p class="
-                          aboutme" 
-                            style="color:black">Sono uno studente universitario alla <span style="font-weight:bold">IULM</span> in 
-            <span style="font-weight:bold">CMP Comunicazione</span>, <span style="font-weight:bold">media</span> <!-- indicazione sulla stessa linea -->
-            e <span style="font-weight:bold">pubblicita'</span>.
-            Mi piace esplorare il mondo della comunicazione e dei media, le diverse forme attraverso cui 
-            i messaggi prendono vita, e capire come queste influenzino il comportamento e le percezioni 
-            del pubblico.
-            Mi piace apprendere per crescere continuamente, 
-            imparare e collaborare a progetti stimolanti che mi permettano di
-            applicare le competenze acquisite durante il mio percorso di studi. 
-          
-    
-        </p>
-                <p class="aboutme1"
-                    style="color:black"> Durante il mio percorso accademico ho avuto
-                    modo di sviluppare diversi progetti che mi hanno permesso di approfondire strategie pubblicitarie, 
-                    content creation e analisi dei media.
+            <!-- About Me -->
+            <h2 class="section-title">ABOUT ME</h2>
+            
+            <p class="aboutme" style="color:black">
+                    Sono un neolaureato in <span style="font-weight:bold">CMP</span> presso <span style="font-weight:bold"></span> <em>La Libera
+                    Università di Lingue e Comunicazione</em></span>
+                    <span style="font-weight:bold">IULM</span>. <br>
+                    Mi entusiasma il mondo della comunicazione e dei mass media. Sono una persona solare e positiva, 
+                    mi piace apprendere per una crescita continua e durante il mio percorso
+                    accademico ho avuto modo di sviluppare diversi progetti che mi hanno permesso di approfondire 
+                    strategie pubblicitarie, digital marketing, analisi dei media e branding.
                 </p>
 
-                <h2 class="section-title">SKILLS</h2>
+            
+
+                <h2 class="section-title">KEY SKILLS</h2>
                 
-                <ul class="skills">
-                    <li>analisi dei media</li>
-                    <li>strategie di comunicazione</li>
-                    <li>Social media e contenuti digitali</li>
-                    <li>Excel</li>
-                    <li>Photoshop</li>
-                </ul>
+                <p class="aboutme" style="color:black">
+                    Analisi dei media | Strategie di comunicazione | Excel | Photoshop | Da Vinci | Digital Marketing | HTML/Css
+                    
+
+
+                </p>
+
 
             </div>
+        </div>
 
-<!-- Bottone scroll -->
-                       <div class="icon-buttons">
-  <button id="btn-portfolio" class="icon-btn">Portfolio</button>
-  <button id="btn-tesi" class="icon-btn">Tesi</button>
-</div>
+            
+           <!-- Portfolio e Tesi Cards -->
+            <div class="portfolio-section">
+                <!-- Portfolio Card -->
+                <div class="portfolio-card-wrapper portfolio-large">
+                    <div class="portfolio-card" onclick="window.open('BRIEF4.pdf', '_blank')">
+                        <div class="card-content">
+                            <h3>Portfolio</h3>
+                            <div class="card-actions">
+                                <a href="BRIEF4.pdf" target="_blank" onclick="event.stopPropagation()" title="Visualizza">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<div id="content-portfolio" class="content-section" style="display:none;">
-  <h3>Portfolio</h3>
-  <ul>
-    
-      <img src="BRIEF4.pdf" alt="Progetto 1" width="300">
-      <p style="font-weight:lighter">Brief lancio profumo per ambienti.</p>
-      <a href="BRIEF4.pdf" target="_blank">Visualizza o scarica brief in PDF</a>
-    
-  </ul>
-</div>
-<div id="content-tesi" class="content-section" style="display:none;">
-  <h3>Tesi Universitaria</h3>
-  <p>Il Sistema di Credito Sociale in Cina</p>
-  <a href="tesi.pdf" target="_blank">Visualizza o scarica la tesi in PDF</a>
-</div>
+                <!-- Tesi Card -->
+                <div class="portfolio-card-wrapper portfolio-small">
+                    <div class="portfolio-card" onclick="window.open('tesi.pdf', '_blank')">
+                        <div class="card-content">
+                            <h3>Sistema di<br>Credito Sociale<br>in Cina</h3>
+                            <p class="card-subtitle-small">Tesi Universitaria</p>
+                            <div class="card-actions">
+                                <a href="tesi.pdf" target="_blank" onclick="event.stopPropagation()" title="Visualizza">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-
+        </div>
     </section>
 
-<script>
-const btnPortfolio = document.getElementById('btn-portfolio');
-const btnTesi = document.getElementById('btn-tesi');
-const contentPortfolio = document.getElementById('content-portfolio');
-const contentTesi = document.getElementById('content-tesi');
-
-function scrollToContent(el) {
-  el.scrollIntoView({behavior: 'smooth'});
-}
-
-btnPortfolio.onclick = function() {
-  contentTesi.style.display = 'none';
-  if (contentPortfolio.style.display === 'none') {
-    contentPortfolio.style.display = 'block';
-    scrollToContent(contentPortfolio);
-  } else {
-    contentPortfolio.style.display = 'none';
-  }
-};
-
-btnTesi.onclick = function() {
-  contentPortfolio.style.display = 'none';
-  if (contentTesi.style.display === 'none') {
-    contentTesi.style.display = 'block';
-    scrollToContent(contentTesi);
-  } else {
-    contentTesi.style.display = 'none';
-  }
-};
-</script>
-
+    <script src="script.js"></script>
 
 </body>
 </html>
-
