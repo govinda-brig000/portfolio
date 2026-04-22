@@ -26,13 +26,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const wavingHand = document.getElementById('waving-hand');
     if (wavingHand) {
-        wavingHand.addEventListener('click', function() {
+        // Function to trigger wave animation
+        function triggerWave() {
             // Remove the wave class if it exists
             wavingHand.classList.remove('wave');
             // Trigger reflow to restart animation
             void wavingHand.offsetWidth;
             // Add the wave class to start animation
             wavingHand.classList.add('wave');
+        }
+
+        // Click event for desktop
+        wavingHand.addEventListener('click', triggerWave);
+
+        // Touch event for mobile/iPhone
+        wavingHand.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            triggerWave();
+        });
+
+        // Pointer event for better cross-device support
+        wavingHand.addEventListener('pointerdown', function(e) {
+            if (e.pointerType === 'touch') {
+                e.preventDefault();
+                triggerWave();
+            }
         });
     }
 });
